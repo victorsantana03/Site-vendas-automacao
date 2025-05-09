@@ -13,12 +13,8 @@
 
   /* CORES PRIMÁRIAS */
   --color-azul-marinho: #1d4289;
-  --color-gradient-azul: linear-gradient(
-    0deg,
-    rgba(27, 66, 137, 1) 0%,
-    rgba(7, 19, 42, 1) 30%
-  );
   --color-branco: #ffffff;
+  --color-cinza: #aaaaaa;
 
   /* FONTES */
   --font-bebasneue: "Bebas Neue", "sans-serif";

@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
@@ -20,7 +26,7 @@
   </head>
   <body>
     <!--CABEÇALHO-->
-    <header class="bg-cold-white fixed z-50 w-full">
+    <header id="header" class="bg-cold-white fixed z-50 w-full duration-400">
       <nav class="flex items-center justify-between px-24 py-6">
         <div>
           <img
@@ -29,29 +35,55 @@
             alt="Logo"
           />
         </div>
-        <ul class="flex items-center gap-10 text-lg">
-          <li>Home</li>
-          <li>Sobre nós</li>
-          <li>Curso</li>
-          <li>Feedbacks</li>
-          <li>Ofertas</li>
-          <li>Matricule-se</li>
+        <ul class="font-roboto flex items-center gap-10 text-xl">
+          <li
+            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
+          >
+            Home
+          </li>
+          <li
+            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
+          >
+            Sobre nós
+          </li>
+          <li
+            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
+          >
+            Curso
+          </li>
+          <li
+            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
+          >
+            Feedbacks
+          </li>
+          <li
+            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
+          >
+            Ofertas
+          </li>
+          <li
+            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
+          >
+            Matricule-se
+          </li>
         </ul>
       </nav>
     </header>
     <!--CABEÇALHO-->
 
     <!--HOME-->
-    <section class="mx-52 pt-40">
+    <section class="bg-cold-white px-52 pt-80">
       <div class="flex items-center justify-between">
-        <div class="flex max-w-[700px] flex-col items-start gap-6">
-          <h2 class="text-4xl font-bold">
+        <div class="flex max-w-[800px] flex-col items-start gap-6 pb-48">
+          <h2
+            class="font-bebasneue text-azul-petroleo max-w-[720px] text-7xl leading-20 font-semibold"
+          >
             Domine a Automação Inverter e entregue soluções que poucos técnicos
             conseguem.
           </h2>
 
           <button
-            class="bg-azul-marinho cursor-pointer rounded-3xl px-4 py-2 text-lg text-white"
+            class="bg-azul-marinho font-roboto cursor-pointer rounded-4xl px-6 py-4 text-xl text-white duration-100 hover:text-[21px] hover:shadow-2xl/50"
           >
             Garanta sua vaga
           </button>
@@ -67,40 +99,40 @@
     <!--HOME-->
 
     <!--CARDS-->
-    <section class="mx-52 py-28">
-      <div class="grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-10">
+    <section class="px-52 py-28">
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-12">
         <div
-          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10"
+          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 shadow-xl"
         >
           <i class="fi fi-tr-hand-holding-seeding text-3xl"></i>
           <h3 class="text-2xl">Acesso Vitalício</h3>
         </div>
         <div
-          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
         >
           <i class="fi fi-tr-banner-5 text-3xl"></i>
           <h3>Certificado de Conclusão</h3>
         </div>
         <div
-          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
         >
           <i class="fi fi-tr-video-duration text-3xl"></i>
           <h3>+ de 15 horas de curso</h3>
         </div>
         <div
-          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
         >
           <i class="fi fi-tr-users-class text-3xl"></i>
           <h3>Grupo fechado de alunos</h3>
         </div>
         <div
-          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
         >
           <i class="fi fi-tr-lesson-class text-3xl"></i>
           <h3>Suporte técnico dos professores</h3>
         </div>
         <div
-          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
         >
           <i class="fi fi-tr-badget-check-alt text-3xl"></i>
           <h3>Garantia</h3>
@@ -110,10 +142,10 @@
     <!--CARDS-->
 
     <!--VÍDEO-->
-    <section class="mx-52">
-      <div class="flex flex-col gap-10">
+    <section class="px-52">
+      <div class="flex flex-col gap-5">
         <i class="fi fi-tr-camera-movie text-5xl"></i>
-        <p class="text-xl">
+        <p class="font-roboto text-xl">
           Descubra como os técnicos mais avançados estão se destacando com a
           automação inverter — e como você pode fazer o mesmo.
         </p>
@@ -133,13 +165,13 @@
 
     <!--TEXTO DE APRESENTAÇÃO-->
     <section class="mx-52 py-28">
-      <h1 class="pb-10 text-3xl">Uma breve apresentação...</h1>
+      <h1 class="font-bebasneue pb-10 text-4xl">Uma breve apresentação...</h1>
       <div class="flex flex-col gap-10">
         <!--ESTEVÃO-->
         <div>
-          <div class="pb-5">
-            <h2 class="text-3xl">Estevão Grossi</h2>
-            <p class="text-lg">Brastecno</p>
+          <div class="font-roboto pb-5">
+            <h2 class="text-3xl font-semibold">Estevão Grossi</h2>
+            <p class="text-azul-marinho text-lg">Brastecno</p>
           </div>
 
           <div class="flex items-center gap-10">
@@ -148,7 +180,7 @@
               alt="Foto do Estevão"
               class="w-2xs"
             />
-            <p class="text-lg">
+            <p class="font-roboto text-center text-lg">
               Prazer, sou o Estevão Grossi, fundador da Brastecno. Entrei no
               mundo da refrigeração de forma autodidata, consertando
               eletrodomésticos e sempre buscando me aperfeiçoar. Com o tempo, me
@@ -164,9 +196,9 @@
 
         <!--LUCAS-->
         <div>
-          <div class="pb-5">
-            <h2 class="text-end text-3xl">Lucas Alves</h2>
-            <p class="text-end text-lg">Consertolândia</p>
+          <div class="font-roboto pb-5">
+            <h2 class="text-end text-3xl font-semibold">Lucas Alves</h2>
+            <p class="text-end text-lg text-red-500">Consertolândia</p>
           </div>
           <div class="flex flex-row-reverse items-center gap-10">
             <img
@@ -174,7 +206,7 @@
               alt="Foto do Lucas"
               class="w-2xs"
             />
-            <p class="text-lg">
+            <p class="font-roboto text-center text-lg">
               Olá, sou o Lucas Alves, fundador da Consertolândia. Comecei na
               refrigeração aos 17 anos, aprendendo do zero em uma oficina. Aos
               18, me tornei sócio do técnico que me ensinou e segui carreira
@@ -194,11 +226,11 @@
     <!--MÓDULOS E AULAS-->
     <section class="mx-52 pb-28">
       <div class="flex flex-col items-center gap-10 pb-20">
-        <h1 class="w-[800px] text-center text-5xl font-bold">
+        <h1 class="font-bebasneue max-w-[800px] text-center text-5xl font-bold">
           Confira um pouco do que te espera no curso
           <span class="text-azul-marinho">Automação Inverter</span>
         </h1>
-        <p class="w-[800px] text-center text-2xl">
+        <p class="font-roboto max-w-[800px] text-center text-2xl">
           Aulas teóricas, práticas e direto na bancada. Com conteúdos aplicáveis
           e explicações passo a passo, você vai testar, praticar e sair pronto
           para atuar com segurança na área.
@@ -209,8 +241,8 @@
         <div>
           <img src="./assets/img/img-modulos.jpg" alt="" class="w-[585px]" />
         </div>
-        <div class="flex flex-col gap-3">
-          <div class="bg-cold-white p-4">
+        <div class="font-roboto flex flex-col gap-3">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">Apresentação</h2>
@@ -236,7 +268,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">Projetos Práticos com Arduino</h2>
@@ -263,7 +295,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">Seleção de Compressores</h2>
@@ -280,7 +312,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">Diagramas Elétricos dos Projetos</h2>
@@ -302,7 +334,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
 
@@ -336,7 +368,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">
@@ -363,7 +395,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">Drop-in FullMotion Embraco</h2>
@@ -383,7 +415,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">BRE50 Brastemp Soft Start</h2>
@@ -403,7 +435,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">Módulo Philco</h2>
@@ -416,7 +448,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">French Door Samsung RF49A</h2>
@@ -432,7 +464,7 @@
             </div>
           </div>
 
-          <div class="bg-cold-white p-4">
+          <div class="bg-cold-white cursor-pointer p-4">
             <div class="flex items-center gap-4">
               <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
               <h2 class="text-2xl">Modulo Bonus | Fabricação de Testador</h2>
@@ -615,5 +647,6 @@
       </div>
     </footer>
     <!--FOOTER-->
+    <script src="./script.js"></script>
   </body>
 </html>
