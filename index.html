@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
     <link
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
@@ -19,15 +20,16 @@
   </head>
   <body>
     <!--CABEÇALHO-->
-    <header>
-      <nav>
+    <header class="bg-cold-white fixed z-50 w-full">
+      <nav class="flex items-center justify-between px-24 py-6">
         <div>
           <img
-            src="./assets/img/logo-consertolandiaebrastecno.png"
+            class="w-60"
+            src="./assets/logos/logo-consertolandia-mono.png"
             alt="Logo"
           />
         </div>
-        <ul>
+        <ul class="flex items-center gap-10 text-lg">
           <li>Home</li>
           <li>Sobre nós</li>
           <li>Curso</li>
@@ -40,57 +42,78 @@
     <!--CABEÇALHO-->
 
     <!--HOME-->
-    <section>
-      <div>
-        <h2>
-          Domine a Automação Inverter e entregue soluções que poucos técnicos
-          conseguem.
-        </h2>
+    <section class="mx-52 pt-40">
+      <div class="flex items-center justify-between">
+        <div class="flex max-w-[700px] flex-col items-start gap-6">
+          <h2 class="text-4xl font-bold">
+            Domine a Automação Inverter e entregue soluções que poucos técnicos
+            conseguem.
+          </h2>
+
+          <button
+            class="bg-azul-marinho cursor-pointer rounded-3xl px-4 py-2 text-lg text-white"
+          >
+            Garanta sua vaga
+          </button>
+        </div>
+
         <img
+          class="w-xl"
           src="./assets/img/img-lucas-e-estevao-home.png"
           alt="Imagem Lucas e Estevão"
         />
-        <button>Garanta sua vaga</button>
       </div>
     </section>
     <!--HOME-->
 
     <!--CARDS-->
-    <section>
-      <div>
-        <div>
-          <h3>Acesso Vitalício</h3>
-          <i class="fi fi-tr-hand-holding-seeding"></i>
+    <section class="mx-52 py-28">
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-10">
+        <div
+          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10"
+        >
+          <i class="fi fi-tr-hand-holding-seeding text-3xl"></i>
+          <h3 class="text-2xl">Acesso Vitalício</h3>
         </div>
-        <div>
+        <div
+          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+        >
+          <i class="fi fi-tr-banner-5 text-3xl"></i>
           <h3>Certificado de Conclusão</h3>
-          <i class="fi fi-tr-banner-5"></i>
         </div>
-        <div>
-          <h3>+ de 15 horas de curso e + de 100 aulas</h3>
-          <i class="fi fi-tr-video-duration"></i>
+        <div
+          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+        >
+          <i class="fi fi-tr-video-duration text-3xl"></i>
+          <h3>+ de 15 horas de curso</h3>
         </div>
-        <div>
+        <div
+          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+        >
+          <i class="fi fi-tr-users-class text-3xl"></i>
           <h3>Grupo fechado de alunos</h3>
-          <i class="fi fi-tr-users-class"></i>
         </div>
-        <div>
+        <div
+          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+        >
+          <i class="fi fi-tr-lesson-class text-3xl"></i>
           <h3>Suporte técnico dos professores</h3>
-          <i class="fi fi-tr-lesson-class"></i>
         </div>
-        <div>
+        <div
+          class="flex flex-col items-center gap-3 rounded-2xl bg-red-300 p-10 text-2xl"
+        >
+          <i class="fi fi-tr-badget-check-alt text-3xl"></i>
           <h3>Garantia</h3>
-          <i class="fi fi-tr-badget-check-alt"></i>
         </div>
       </div>
     </section>
     <!--CARDS-->
 
     <!--VÍDEO-->
-    <section>
-      <div>
-        <i class="fi fi-tr-camera-movie"></i>
-        <p>
+    <section class="mx-52">
+      <div class="flex flex-col gap-10">
+        <i class="fi fi-tr-camera-movie text-5xl"></i>
+        <p class="text-xl">
           Descubra como os técnicos mais avançados estão se destacando com a
           automação inverter — e como você pode fazer o mesmo.
         </p>
@@ -109,15 +132,23 @@
     <!--VÍDEO-->
 
     <!--TEXTO DE APRESENTAÇÃO-->
-    <section>
-      <h1>Texto de apresentação</h1>
-      <div>
+    <section class="mx-52 py-28">
+      <h1 class="pb-10 text-3xl">Uma breve apresentação...</h1>
+      <div class="flex flex-col gap-10">
         <!--ESTEVÃO-->
         <div>
-          <h2>Estevão Grossi - Brastecno</h2>
-          <div>
-            <img src="./assets/img/img-estevao.png" alt="Foto do Estevão" />
-            <p>
+          <div class="pb-5">
+            <h2 class="text-3xl">Estevão Grossi</h2>
+            <p class="text-lg">Brastecno</p>
+          </div>
+
+          <div class="flex items-center gap-10">
+            <img
+              src="./assets/img/img-estevao.png"
+              alt="Foto do Estevão"
+              class="w-2xs"
+            />
+            <p class="text-lg">
               Prazer, sou o Estevão Grossi, fundador da Brastecno. Entrei no
               mundo da refrigeração de forma autodidata, consertando
               eletrodomésticos e sempre buscando me aperfeiçoar. Com o tempo, me
@@ -133,10 +164,17 @@
 
         <!--LUCAS-->
         <div>
-          <h2>Lucas Alves - Consertolândia</h2>
-          <div>
-            <img src="./assets/img/img-lucas.png" alt="Foto do Lucas" />
-            <p>
+          <div class="pb-5">
+            <h2 class="text-end text-3xl">Lucas Alves</h2>
+            <p class="text-end text-lg">Consertolândia</p>
+          </div>
+          <div class="flex flex-row-reverse items-center gap-10">
+            <img
+              src="./assets/img/img-lucas.png"
+              alt="Foto do Lucas"
+              class="w-2xs"
+            />
+            <p class="text-lg">
               Olá, sou o Lucas Alves, fundador da Consertolândia. Comecei na
               refrigeração aos 17 anos, aprendendo do zero em uma oficina. Aos
               18, me tornei sócio do técnico que me ensinou e segui carreira
@@ -154,245 +192,260 @@
     <!--TEXTO DE APRESENTAÇÃO-->
 
     <!--MÓDULOS E AULAS-->
-    <section>
-      <div>
-        <h1>Confira um pouco do que te espera no curso Automação Inverter</h1>
-        <p>
+    <section class="mx-52 pb-28">
+      <div class="flex flex-col items-center gap-10 pb-20">
+        <h1 class="w-[800px] text-center text-5xl font-bold">
+          Confira um pouco do que te espera no curso
+          <span class="text-azul-marinho">Automação Inverter</span>
+        </h1>
+        <p class="w-[800px] text-center text-2xl">
           Aulas teóricas, práticas e direto na bancada. Com conteúdos aplicáveis
           e explicações passo a passo, você vai testar, praticar e sair pronto
           para atuar com segurança na área.
         </p>
       </div>
 
-      <div>
+      <div class="flex justify-center gap-20">
         <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Apresentação</h2>
-          </div>
-          <div>
-            <ul>
-              <li>Conheça os professores e o curso</li>
-              <li>O que você vai aprender aqui</li>
-              <li>Ferramentas essenciais para automação</li>
-              <li>Programação Arduino</li>
-              <li>Programando direto no computador: Receita pronta</li>
-              <li>Ligando Arduino na bancada</li>
-              <li>IT70 bivolt Electrolux</li>
-              <li>Apresentando compressor FMSU9C e seu inversor bivolt</li>
-              <li>Invertendo alimentação do cabo de força</li>
-              <li>Modelos de compressor On/Off possíveis</li>
-              <li>Passo a passo fazendo a elétrica do Arduino</li>
-              <li>Simulação com lampada Arduino e partida do motor</li>
-              <li>Medindo corrente compressor On/Off</li>
-              <li>Aula final IT70</li>
-              <li>Arduino: Primeiros passos</li>
-            </ul>
-          </div>
+          <img src="./assets/img/img-modulos.jpg" alt="" class="w-[585px]" />
         </div>
-
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Projetos Práticos com Arduino</h2>
+        <div class="flex flex-col gap-3">
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">Apresentação</h2>
+            </div>
+            <div class="hidden">
+              <ul>
+                <li>Conheça os professores e o curso</li>
+                <li>O que você vai aprender aqui</li>
+                <li>Ferramentas essenciais para automação</li>
+                <li>Programação Arduino</li>
+                <li>Programando direto no computador: Receita pronta</li>
+                <li>Ligando Arduino na bancada</li>
+                <li>IT70 bivolt Electrolux</li>
+                <li>Apresentando compressor FMSU9C e seu inversor bivolt</li>
+                <li>Invertendo alimentação do cabo de força</li>
+                <li>Modelos de compressor On/Off possíveis</li>
+                <li>Passo a passo fazendo a elétrica do Arduino</li>
+                <li>Simulação com lampada Arduino e partida do motor</li>
+                <li>Medindo corrente compressor On/Off</li>
+                <li>Aula final IT70</li>
+                <li>Arduino: Primeiros passos</li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <ul>
-              <li>Projetos Arduino: Parte 1</li>
-              <li>Projetos Arduino: Parte 2</li>
-              <li>Converter On/Off: Programação passo a passo</li>
-              <li>Converter On/Off: Montagem completa</li>
-              <li>Inverter Soft Start: Programação avançada</li>
-              <li>Inverter Soft Start: Montagem do sistema</li>
-              <li>Converter Sensor: Programação simplificada</li>
-              <li>Converter Sensor: Montagem prática</li>
-              <li>Links de programação Arduino</li>
-              <li>Expansão Arduino I/O Shield</li>
-              <li>Módulos relé para Arduino: Uso e configuração</li>
-              <li>Conectores para módulos inversores</li>
-              <li>Módulos Optoacopladores: Gatilho On/Off</li>
-              <li>Osciloscópio: Monitoramento de sinais</li>
-              <li>Seleção de inversores Embraco universal</li>
-            </ul>
-          </div>
-        </div>
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">Projetos Práticos com Arduino</h2>
+            </div>
 
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Seleção de Compressores</h2>
-          </div>
-
-          <div>
-            <ul>
-              <li>Seleção de compressor inverter</li>
-              <li>Seleção compressores inverter aula final</li>
-              <li>Aplicativo Toolbox para cálculo de compressor</li>
-              <li>Aplicativo Toolbox cálculo para compressor On/Off</li>
-              <li>Tabela de compressor inverter na descrição</li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Diagramas Elétricos dos Projetos</h2>
+            <div class="hidden">
+              <ul>
+                <li>Projetos Arduino: Parte 1</li>
+                <li>Projetos Arduino: Parte 2</li>
+                <li>Converter On/Off: Programação passo a passo</li>
+                <li>Converter On/Off: Montagem completa</li>
+                <li>Inverter Soft Start: Programação avançada</li>
+                <li>Inverter Soft Start: Montagem do sistema</li>
+                <li>Converter Sensor: Programação simplificada</li>
+                <li>Converter Sensor: Montagem prática</li>
+                <li>Links de programação Arduino</li>
+                <li>Expansão Arduino I/O Shield</li>
+                <li>Módulos relé para Arduino: Uso e configuração</li>
+                <li>Conectores para módulos inversores</li>
+                <li>Módulos Optoacopladores: Gatilho On/Off</li>
+                <li>Osciloscópio: Monitoramento de sinais</li>
+                <li>Seleção de inversores Embraco universal</li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <ul>
-              <li>Diagrama elétrico Brastecno converter On/Off (LM7805)</li>
-              <li>
-                Diagrama elétrico Brastecno converter On/Off (Octoacoplador)
-              </li>
-              <li>Diagrama elétrico Brastecno converter Soft Start</li>
-              <li>Diagrama elétrico Brastecno converter Sensor Inverter</li>
-              <li>Diagrama elétrico Brastecno converter On/Off Samsung</li>
-              <li>Diagrama elétrico Brastecno converter Soft Start Samsung</li>
-            </ul>
-          </div>
-        </div>
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">Seleção de Compressores</h2>
+            </div>
 
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Resultados em Campo</h2>
+            <div class="hidden">
+              <ul>
+                <li>Seleção de compressor inverter</li>
+                <li>Seleção compressores inverter aula final</li>
+                <li>Aplicativo Toolbox para cálculo de compressor</li>
+                <li>Aplicativo Toolbox cálculo para compressor On/Off</li>
+                <li>Tabela de compressor inverter na descrição</li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <ul>
-              <li>Resultados DF36X com Brastecno Sensor Inverter Arduino</li>
-              <li>Resultados BRN80 com Brastecno Soft Start Arduino</li>
-              <li>Resultados BRS70G com Brastecno Soft Start Arduino</li>
-              <li>Resultados BRE80 com Brastecno Sensor Inverter Arduino</li>
-              <li>
-                Resultados Samsung RT38 com válvula com Brastecno Converter
-                On/Off
-              </li>
-              <li>Gatilho</li>
-              <li>
-                Resultados Eletrolux IB55S com Brastecno Converter On/Off com
-                gatilho
-              </li>
-              <li>
-                Resultados Electrolux IB7S com Brastecno Converter On/Off com
-                gatilho
-              </li>
-              <li>
-                Resultados Samsung RS50 com Brastecno Converter On/Off Soft
-                Start com gatilho
-              </li>
-            </ul>
-          </div>
-        </div>
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">Diagramas Elétricos dos Projetos</h2>
+            </div>
 
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Módulo Cervejeira Elletromec Estevão e Lucas</h2>
+            <div class="hidden">
+              <ul>
+                <li>Diagrama elétrico Brastecno converter On/Off (LM7805)</li>
+                <li>
+                  Diagrama elétrico Brastecno converter On/Off (Octoacoplador)
+                </li>
+                <li>Diagrama elétrico Brastecno converter Soft Start</li>
+                <li>Diagrama elétrico Brastecno converter Sensor Inverter</li>
+                <li>Diagrama elétrico Brastecno converter On/Off Samsung</li>
+                <li>
+                  Diagrama elétrico Brastecno converter Soft Start Samsung
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <ul>
-              <li>Drop-in vs módulo frequencial</li>
-              <li>
-                Inversor Drop-in FMSY (Baby) 519400014 e seu funcionamento
-              </li>
-              <li>Sempre chega tensão no inversor</li>
-              <li>Drop-in: Como ele desliga?</li>
-              <li>Atenção às pressões de trabalho em baixa e alta rotação</li>
-              <li>Inversor Drop-in e FullMotion</li>
-              <li>Resumo sobre Drop-in (contato seco)</li>
-              <li>Soft Start Arduino cervejeira Elettromec</li>
-              <li>Atualização com gravador LG na placa</li>
-              <li>Teste de pressão em compressor inverter</li>
-              <li>Erros de inversor Embraco Drop-in e FullMotion</li>
-            </ul>
-          </div>
-        </div>
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
 
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Drop-in FullMotion Embraco</h2>
-          </div>
+              <h2 class="text-2xl">Resultados em Campo</h2>
+            </div>
 
-          <div>
-            <ul>
-              <li>Como diferenciar inversor Drop-in e frequencial</li>
-              <li>Como ligar inversor FullMotion Drop-in</li>
-              <li>Alterações de frequência inversores Embraco</li>
-              <li>Acertando sequencias de fases inversor Drop-in FullMotion</li>
-              <li>Inversor Drop-in Baby como ligar</li>
-              <li>Baby Drop-in ligando compressor</li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>BRE50 Brastemp Soft Start</h2>
+            <div class="hidden">
+              <ul>
+                <li>Resultados DF36X com Brastecno Sensor Inverter Arduino</li>
+                <li>Resultados BRN80 com Brastecno Soft Start Arduino</li>
+                <li>Resultados BRS70G com Brastecno Soft Start Arduino</li>
+                <li>Resultados BRE80 com Brastecno Sensor Inverter Arduino</li>
+                <li>
+                  Resultados Samsung RT38 com válvula com Brastecno Converter
+                  On/Off
+                </li>
+                <li>Gatilho</li>
+                <li>
+                  Resultados Eletrolux IB55S com Brastecno Converter On/Off com
+                  gatilho
+                </li>
+                <li>
+                  Resultados Electrolux IB7S com Brastecno Converter On/Off com
+                  gatilho
+                </li>
+                <li>
+                  Resultados Samsung RS50 com Brastecno Converter On/Off Soft
+                  Start com gatilho
+                </li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <ul>
-              <li>Apresentação e estratégia BRE50</li>
-              <li>Arduino Soft Start VEMZ9C Embraco</li>
-              <li>Resultado final Soft Start BRM50</li>
-              <li>Inversor 2 em 1</li>
-              <li>Ligação inversor 2 em 1</li>
-              <li>Ligação Drop-in na geladeira BRE50 atenção!</li>
-              <li>Forma correta de ligar Drop-in FullMotion</li>
-              <li>Ligando Drop-in baby BRE50 aula final</li>
-            </ul>
-          </div>
-        </div>
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">
+                Módulo Cervejeira Elletromec Estevão e Lucas
+              </h2>
+            </div>
 
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Módulo Philco</h2>
-          </div>
-
-          <div>
-            <ul>
-              <li>PRF504I: Como colocar motor On/Off</li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>French Door Samsung RF49A</h2>
+            <div class="hidden">
+              <ul>
+                <li>Drop-in vs módulo frequencial</li>
+                <li>
+                  Inversor Drop-in FMSY (Baby) 519400014 e seu funcionamento
+                </li>
+                <li>Sempre chega tensão no inversor</li>
+                <li>Drop-in: Como ele desliga?</li>
+                <li>Atenção às pressões de trabalho em baixa e alta rotação</li>
+                <li>Inversor Drop-in e FullMotion</li>
+                <li>Resumo sobre Drop-in (contato seco)</li>
+                <li>Soft Start Arduino cervejeira Elettromec</li>
+                <li>Atualização com gravador LG na placa</li>
+                <li>Teste de pressão em compressor inverter</li>
+                <li>Erros de inversor Embraco Drop-in e FullMotion</li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <ul>
-              <li>RF49A</li>
-              <li>Ligando SSR na placa RF49A</li>
-              <li>Reset Erro RF49A</li>
-              <li>Final RF49A</li>
-            </ul>
-          </div>
-        </div>
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">Drop-in FullMotion Embraco</h2>
+            </div>
 
-        <div>
-          <div>
-            <i class="fi fi-rr-angle-right"></i>
-            <h2>Modulo Bonus | Fabricação de Testador</h2>
+            <div class="hidden">
+              <ul>
+                <li>Como diferenciar inversor Drop-in e frequencial</li>
+                <li>Como ligar inversor FullMotion Drop-in</li>
+                <li>Alterações de frequência inversores Embraco</li>
+                <li>
+                  Acertando sequencias de fases inversor Drop-in FullMotion
+                </li>
+                <li>Inversor Drop-in Baby como ligar</li>
+                <li>Baby Drop-in ligando compressor</li>
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <ul>
-              <li>
-                Nesse módulo você irá aprender a fabricar o seu próprio testador
-                para compressores inverter e para placas inversoras
-              </li>
-            </ul>
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">BRE50 Brastemp Soft Start</h2>
+            </div>
+
+            <div class="hidden">
+              <ul>
+                <li>Apresentação e estratégia BRE50</li>
+                <li>Arduino Soft Start VEMZ9C Embraco</li>
+                <li>Resultado final Soft Start BRM50</li>
+                <li>Inversor 2 em 1</li>
+                <li>Ligação inversor 2 em 1</li>
+                <li>Ligação Drop-in na geladeira BRE50 atenção!</li>
+                <li>Forma correta de ligar Drop-in FullMotion</li>
+                <li>Ligando Drop-in baby BRE50 aula final</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">Módulo Philco</h2>
+            </div>
+
+            <div class="hidden">
+              <ul>
+                <li>PRF504I: Como instalar motor On/Off</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">French Door Samsung RF49A</h2>
+            </div>
+
+            <div class="hidden">
+              <ul>
+                <li>RF49A</li>
+                <li>Ligando SSR na placa RF49A</li>
+                <li>Reset Erro RF49A</li>
+                <li>Final RF49A</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-cold-white p-4">
+            <div class="flex items-center gap-4">
+              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <h2 class="text-2xl">Modulo Bonus | Fabricação de Testador</h2>
+            </div>
+
+            <div class="hidden">
+              <ul>
+                <li>
+                  Nesse módulo você irá aprender a fabricar o seu próprio
+                  testador para compressores inverter e para placas inversoras
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -400,44 +453,99 @@
     <!--MÓDULOS E AULAS-->
 
     <!--MÓDULO BÔNUS-->
-    <section>
-      <h1>Módulo Bônus</h1>
+    <section class="mx-52 pb-28">
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-6xl font-bold">
+            Módulo <span class="text-azul-marinho">Bônus</span>
+          </h1>
+        </div>
+
+        <div class="flex w-[900px] flex-col gap-20">
+          <h2 class="text-4xl">
+            Aprenda a fabricar o Testador Inverter Brastecno
+          </h2>
+          <h4 class="text-2xl">
+            Uma ferramenta criada para facilitar diagnósticos e testes em
+            compressores inverter.
+          </h4>
+          <p class="text-xl">
+            Neste módulo extra, você terá acesso ao passo a passo completo da
+            montagem e funcionamento do testador desenvolvido pela própria
+            Brastecno. Um diferencial que só os alunos desse curso terão, com
+            aplicações diretas na sua rotina técnica.
+          </p>
+        </div>
+      </div>
     </section>
     <!--MÓDULO BÔNUS-->
 
     <!--PROVA DE VALOR + CTA-->
-    <section>
-      <button>Quero aprender e me especializar também</button>
+    <section class="mx-52 pb-28">
+      <button
+        class="bg-azul-marinho cursor-pointer rounded-3xl px-4 py-2 text-lg text-white"
+      >
+        Quero aprender e me especializar também
+      </button>
     </section>
     <!--PROVA DE VALOR + CTA-->
 
     <!--OFERTAS-->
-    <section>
-      <div>
-        <div>
-          <h1>OFERTAS</h1>
-          <p>R$ 597,00</p>
-          <button>Quero aprender e me especializar também</button>
+    <section class="mx-52 pb-28">
+      <div class="flex justify-center">
+        <div
+          class="bg-cold-white flex flex-col items-center gap-10 rounded-2xl p-8"
+        >
+          <div>
+            <h1 class="text-3xl font-bold">Pacote completo</h1>
+          </div>
+          <div class="flex flex-col items-center gap-3 text-lg">
+            <p>Certificado de conclusão</p>
+            <p>+ de 10 horas de curso</p>
+            <p>Acesso vitalício</p>
+            <p>Grupo fechado com os alunos</p>
+            <p>7 dias de garantia</p>
+            <p>Suporte com manuais técnicos</p>
+            <p>Suporte dos professores</p>
+            <p>Módulo bônus</p>
+            <p>Aulas práticas</p>
+            <p>Aulas teóricas</p>
+          </div>
+          <div>
+            <p class="text-3xl">R$ 597,00</p>
+          </div>
+          <button
+            class="bg-azul-marinho cursor-pointer rounded-3xl px-4 py-2 text-lg text-white"
+          >
+            Quero aprender e me especializar também
+          </button>
         </div>
       </div>
     </section>
     <!--OFERTAS-->
 
     <!--REEMBOLSO-->
-    <section>
-      <div>
-        <h1>SELO REEMBOLSO</h1>
-        <p>
-          Se você não gostar do curso, pode pedir o reembolso em até 7 dias. Sem
-          perguntas, sem complicações.
+    <section class="mx-52 pb-28">
+      <div class="flex items-center justify-between">
+        <h1 class="text-3xl font-bold">
+          Garantia de 7 Dias — Compra 100% Segura
+        </h1>
+        <p class="w-[700px] text-2xl">
+          Você pode acessar o conteúdo do curso com total tranquilidade. Se por
+          qualquer motivo achar que o curso não é para você, oferecemos uma
+          garantia incondicional de 7 dias. Basta solicitar o reembolso dentro
+          desse período e todo o valor investido será devolvido, sem perguntas
+          ou burocracia. Seu compromisso é com o aprendizado — o nosso é com a
+          sua satisfação.
         </p>
       </div>
     </section>
     <!--REEMBOLSO-->
 
     <!--CTA-->
-    <section>
-      <div>
+    <section class="mx-52 pb-28">
+      <div class="flex flex-col items-center justify-center gap-10">
+        <img src="./assets/img/clique-gif.gif" alt="" />
         <h3>
           A especialização que você procura está a um clique de distância.
         </h3>
@@ -447,45 +555,63 @@
     <!--CTA-->
 
     <!--FOOTER-->
-    <footer>
-      <div>
-        <div>
-          <img
-            src="./assets/logos/logo-brastecno.svg"
-            alt="Logo da Brastecno"
-          />
-          <a href="https://www.brastecnoguarulhos.com.br/" target="_blank"
-            >Brastecno</a
-          >
+    <footer class="bg-cold-white px-16 py-4">
+      <div class="flex items-center justify-around">
+        <div class="flex flex-col items-center gap-2">
+          <a href="https://www.brastecnoguarulhos.com.br" target="_blank">
+            <img
+              src="./assets/logos/logo-brastecno.svg"
+              alt="Logo da Brastecno"
+              class="w-2xs"
+            />
+          </a>
+
+          <p>Estevão Grossi</p>
+          <a href="mailto:">brastecnoassistencia@gmail.com </a>
           <div>
             <i class="fi fi-brands-instagram"></i>
           </div>
-          <div>
-            <i class="fi fi-rr-phone-call"></i>
-            <p>40028922</p>
-          </div>
-          <p>CNPJ</p>
-          <a href="mailto:">email</a>
         </div>
 
-        <div>
-          <img
-            src="./assets/logos/logo-consertolandia.png"
-            alt="Logo da Consertolândia"
-          />
-          <a href="https://www.brastecnoguarulhos.com.br/" target="_blank"
-            >Consertolândia</a
-          >
+        <div class="flex flex-col items-center gap-2">
+          <a href="https://consertolandiarefrigeracao.com.br/" target="_blank">
+            <img
+              src="./assets/logos/logo-consertolandia.png"
+              alt="Logo da Consertolândia"
+              class="w-2xs"
+            />
+          </a>
+
+          <p>Lucas Alves</p>
+          <a href="mailto:">Consertolandia011sp@gmail.com</a>
           <div>
             <i class="fi fi-brands-instagram"></i>
           </div>
-          <div>
-            <i class="fi fi-rr-phone-call"></i>
-            <p>40028922</p>
-          </div>
-          <p>CNPJ</p>
-          <a href="mailto:">email</a>
         </div>
+      </div>
+
+      <div
+        class="flex w-[800px] items-center justify-center border-t-1 bg-amber-300"
+      >
+        <p style="margin: 0">
+          © 2025 <strong>Brastecno</strong>. Todos os direitos reservados.
+          Desenvolvido por
+          <a
+            href="https://www.linkedin.com/in/catherine-grossi/"
+            style="color: #56a0d3"
+            class="hover:underline"
+          >
+            Catherine Grossi
+          </a>
+          e
+          <a
+            href="https://www.linkedin.com/in/victor-alves-santana-111440196/"
+            style="color: #56a0d3"
+            class="hover:underline"
+          >
+            Victor Santana
+          </a>
+        </p>
       </div>
     </footer>
     <!--FOOTER-->
