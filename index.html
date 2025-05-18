@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/119d948988.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./src/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tilt+Prism&display=swap"
       rel="stylesheet"
     />
     <link
@@ -24,45 +28,44 @@
     />
     <title>Automação Inverter</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!--CABEÇALHO-->
-    <header id="header" class="bg-cold-white fixed z-50 w-full duration-400">
-      <nav class="flex items-center justify-between px-24 py-6">
+    <!-- <header
+      id="header"
+      class="bg-cold-white-menu fixed left-1/2 z-50 mt-2 w-[98%] -translate-x-1/2 rounded-full border-2 border-white p-3 duration-400 lg:w-[95%] lg:px-5 lg:py-6"
+    > -->
+    <header
+      id="header"
+      class="bg-cold-white-menu fixed left-1/2 z-50 mt-2 w-[98%] -translate-x-1/2 rounded-full border-2 border-white p-3 duration-400 lg:w-[95%] lg:px-5 lg:py-6 xl:w-[90%] xl:px-8 xl:py-6 2xl:w-[80%] 2xl:px-24"
+    >
+      <nav class="flex items-center justify-between">
         <div>
           <img
-            class="w-60"
+            class="w-[180px] md:w-[230px]"
             src="./assets/logos/logo-consertolandia-mono.png"
             alt="Logo"
           />
         </div>
-        <ul class="font-roboto flex items-center gap-10 text-xl">
-          <li
-            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
-          >
+        <ul
+          class="font-roboto text-md hidden items-center gap-3 lg:flex lg:gap-8 lg:text-xl xl:gap-10"
+        >
+          <li class="hover:text-azul-marinho cursor-pointer duration-100">
             Home
           </li>
-          <li
-            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
-          >
+          <li class="hover:text-azul-marinho cursor-pointer duration-100">
             Sobre nós
           </li>
-          <li
-            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
-          >
+          <li class="hover:text-azul-marinho cursor-pointer duration-100">
             Curso
           </li>
-          <li
-            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
-          >
+          <li class="hover:text-azul-marinho cursor-pointer duration-100">
             Feedbacks
           </li>
-          <li
-            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
-          >
+          <li class="hover:text-azul-marinho cursor-pointer duration-100">
             Ofertas
           </li>
           <li
-            class="text-azul-petroleo hover:text-azul-marinho border-azul-marinho cursor-pointer duration-100 hover:border-b-1"
+            class="text-azul-marinho cursor-pointer rounded-full border-2 border-white px-4 py-3 duration-100 hover:bg-white"
           >
             Matricule-se
           </li>
@@ -72,26 +75,48 @@
     <!--CABEÇALHO-->
 
     <!--HOME-->
-    <section class="bg-cold-white px-52 pt-80">
-      <div class="flex items-center justify-between">
-        <div class="flex max-w-[800px] flex-col items-start gap-6 pb-48">
+    <section
+      class="from-cold-white bg-gradient-to-b from-50% to-white px-3 pt-32 lg:px-20 lg:pt-60 xl:px-24 2xl:px-52"
+    >
+      <div
+        class="flex flex-col-reverse items-center justify-between gap-5 pb-14 xl:flex-row"
+      >
+        <div
+          class="relative z-30 flex max-w-[710px] flex-col items-start gap-6 xl:min-w-[450px] 2xl:min-w-[510px]"
+        >
           <h2
-            class="font-bebasneue text-azul-petroleo max-w-[720px] text-7xl leading-20 font-semibold"
+            class="font-bebasneue text-azul-petroleo text-4xl font-semibold xl:text-[65px] 2xl:text-7xl 2xl:leading-20"
           >
             Domine a Automação Inverter e entregue soluções que poucos técnicos
             conseguem.
           </h2>
 
           <button
-            class="bg-azul-marinho font-roboto cursor-pointer rounded-4xl px-6 py-4 text-xl text-white duration-100 hover:text-[21px] hover:shadow-2xl/50"
+            class="font-roboto group border-azul-petroleo relative flex cursor-pointer items-center gap-4 overflow-hidden rounded-4xl border bg-transparent px-6 py-4 text-xl text-black transition-colors duration-300 xl:text-2xl"
           >
-            Garanta sua vaga
+            <span
+              class="relative z-10 transition-colors duration-300 group-hover:text-white"
+            >
+              Garanta sua vaga
+            </span>
+            <i
+              class="fa-solid fa-arrow-right-long relative z-10 text-2xl transition-colors duration-300 group-hover:text-white"
+            ></i>
+
+            <!-- Background animado -->
+            <span
+              class="bg-azul-petroleo absolute inset-0 z-0 origin-left scale-x-0 transform transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
           </button>
+
+          <!-- <div
+            class="bg-azul-marinho absolute top-0 left-0 -z-10 flex h-[70%] w-[60%] rounded-r-full opacity-30 blur-2xl brightness-200"
+          ></div> -->
         </div>
 
         <img
-          class="w-xl"
-          src="./assets/img/img-lucas-e-estevao-home.png"
+          class="z-20 block size-full min-h-[400px] max-w-[750px] min-w-[350px] rounded-tr-4xl rounded-bl-4xl object-cover xl:min-w-[580px] 2xl:min-w-[680px]"
+          src="./assets/img/IMG-home-2.jpg"
           alt="Imagem Lucas e Estevão"
         />
       </div>
@@ -99,114 +124,188 @@
     <!--HOME-->
 
     <!--CARDS-->
-    <section class="px-52 py-28">
-      <div class="grid grid-cols-[repeat(auto-fit,minmax(350px,1fr))] gap-12">
-        <div
-          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 shadow-xl"
-        >
-          <i class="fi fi-tr-hand-holding-seeding text-3xl"></i>
-          <h3 class="text-2xl">Acesso Vitalício</h3>
+    <section class="relative w-full px-2 py-36">
+      <!-- <section
+      class="relative h-full w-full bg-[url(/assets/vetor/cobreis.svg)] bg-[length:100%_auto] bg-center bg-no-repeat py-36"
+    > -->
+
+      <div class="absolute top-0 left-0 -z-10 h-1/2 w-full bg-white"></div>
+      <div
+        class="bg-azul-marinho absolute bottom-0 left-0 -z-10 h-1/2 w-full"
+      ></div>
+
+      <div
+        class="invisible absolute top-100 left-0 z-10 h-full w-screen md:visible"
+      >
+        <img
+          src="./assets/vetor/cobreis-menor.svg"
+          alt=""
+          class="w-screen object-center"
+        />
+      </div>
+
+      <div class="grid grid-cols-1 place-items-center gap-10 xl:grid-cols-3">
+        <div class="z-40 flex w-full max-w-[435px] flex-col gap-10">
+          <div
+            class="bg-azul-petroleo shadow-azul-marinho flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
+          >
+            <i class="fi fi-tr-hand-holding-seeding text-3xl"></i>
+            <h3 class="border-b">Acesso Vitalício</h3>
+          </div>
+          <div
+            class="bg-azul-petroleo flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
+          >
+            <i class="fi fi-tr-banner-5 text-3xl"></i>
+
+            <h3 class="border-b">Certificado de Conclusão</h3>
+          </div>
         </div>
-        <div
-          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
-        >
-          <i class="fi fi-tr-banner-5 text-3xl"></i>
-          <h3>Certificado de Conclusão</h3>
+
+        <div class="z-30 flex w-full max-w-[435px] flex-col gap-10">
+          <div
+            class="bg-azul-petroleo flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
+          >
+            <i class="fi fi-tr-video-duration text-3xl"></i>
+            <h3 class="border-b">+ de 15 horas de curso</h3>
+          </div>
+          <div
+            class="bg-azul-petroleo relative flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
+          >
+            <i class="fi fi-tr-bonus-star text-3xl"></i>
+            <h3 class="border-b">Módulo bônus</h3>
+          </div>
+
+          <div
+            class="bg-azul-petroleo flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
+          >
+            <i class="fi fi-tr-lesson-class text-3xl"></i>
+            <h3 class="border-b">Suporte técnico dos professores</h3>
+          </div>
         </div>
-        <div
-          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
-        >
-          <i class="fi fi-tr-video-duration text-3xl"></i>
-          <h3>+ de 15 horas de curso</h3>
-        </div>
-        <div
-          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
-        >
-          <i class="fi fi-tr-users-class text-3xl"></i>
-          <h3>Grupo fechado de alunos</h3>
-        </div>
-        <div
-          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
-        >
-          <i class="fi fi-tr-lesson-class text-3xl"></i>
-          <h3>Suporte técnico dos professores</h3>
-        </div>
-        <div
-          class="bg-cold-white flex flex-col items-center gap-3 rounded-2xl p-10 text-2xl shadow-xl"
-        >
-          <i class="fi fi-tr-badget-check-alt text-3xl"></i>
-          <h3>Garantia</h3>
+
+        <div class="z-40 flex w-full max-w-[435px] flex-col gap-10">
+          <div
+            class="bg-azul-petroleo flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
+          >
+            <i class="fi fi-tr-badget-check-alt text-3xl"></i>
+            <h3 class="border-b">Garantia</h3>
+          </div>
+          <div
+            class="bg-azul-petroleo flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
+          >
+            <i class="fi fi-tr-users-class text-3xl"></i>
+            <h3 class="border-b">Grupo fechado de alunos</h3>
+          </div>
         </div>
       </div>
     </section>
     <!--CARDS-->
 
     <!--VÍDEO-->
-    <section class="px-52">
-      <div class="flex flex-col gap-5">
-        <i class="fi fi-tr-camera-movie text-5xl"></i>
-        <p class="font-roboto text-xl">
-          Descubra como os técnicos mais avançados estão se destacando com a
-          automação inverter — e como você pode fazer o mesmo.
-        </p>
-        <iframe
-          width="1378"
-          height="775"
-          src="https://www.youtube.com/embed/ZzNOmEohLws"
-          title="Curso Automação Inverter"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+    <section
+      class="from-azul-marinho to-azul-petroleo bg-gradient-to-b px-2 pb-16 lg:px-20 xl:px-32 2xl:px-52"
+    >
+      <div class="flex flex-col items-center gap-5">
+        <div
+          class="z-20 flex flex-col items-start gap-4 text-white xl:flex-row xl:items-center"
+        >
+          <i class="fi fi-tr-camera-movie text-xl md:text-2xl lg:text-3xl"></i>
+          <p class="font-roboto text-md text-justify md:text-lg lg:text-xl">
+            Descubra como os técnicos mais avançados estão se destacando com a
+            automação inverter — e como você pode fazer o mesmo.
+          </p>
+        </div>
+        <div class="z-20 w-[100%] xl:w-[90%]">
+          <iframe
+            class="h-[400px] w-full rounded-4xl lg:h-[700px]"
+            width="1378"
+            height="700px"
+            src="https://www.youtube.com/embed/ZzNOmEohLws"
+            title="Curso Automação Inverter"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
     <!--VÍDEO-->
 
     <!--TEXTO DE APRESENTAÇÃO-->
-    <section class="mx-52 py-28">
-      <h1 class="font-bebasneue pb-10 text-4xl">Uma breve apresentação...</h1>
+    <section class="bg-cold-white px-80 pt-28">
       <div class="flex flex-col gap-10">
         <!--ESTEVÃO-->
-        <div>
-          <div class="font-roboto pb-5">
-            <h2 class="text-3xl font-semibold">Estevão Grossi</h2>
-            <p class="text-azul-marinho text-lg">Brastecno</p>
-          </div>
+        <div class="z-10">
+          <div class="flex items-center gap-20">
+            <div class="relative">
+              <img
+                src="./assets/img/img-estevao.png"
+                alt="Foto do Estevão"
+                class="max-w-[400px]"
+              />
+              <div class="absolute bottom-71 -left-95 -z-10 flex -rotate-90">
+                <h1 class="font-tilt text-9xl opacity-10">BRASTECNO</h1>
+              </div>
+            </div>
 
-          <div class="flex items-center gap-10">
-            <img
-              src="./assets/img/img-estevao.png"
-              alt="Foto do Estevão"
-              class="w-2xs"
-            />
-            <p class="font-roboto text-center text-lg">
-              Prazer, sou o Estevão Grossi, fundador da Brastecno. Entrei no
-              mundo da refrigeração de forma autodidata, consertando
-              eletrodomésticos e sempre buscando me aperfeiçoar. Com o tempo, me
-              formei em Engenharia de Automação e me especializei em sistemas
-              elétricos e na tecnologia inverter. Hoje, desenvolvo soluções que
-              facilitam o trabalho de outros técnicos, como o Brastecno Arduino
-              Converter, e compartilho conhecimento de forma prática e
-              acessível, sempre com foco na realidade do campo.
-            </p>
+            <div class="flex flex-col gap-20">
+              <div>
+                <h2
+                  class="font-bebasneue text-7xl font-semibold tracking-widest"
+                >
+                  Estevão Grossi
+                </h2>
+                <p class="font-roboto border-cinza border-b-1 pb-3 text-3xl">
+                  Brastecno
+                </p>
+              </div>
+              <p class="font-roboto max-w-4xl text-justify text-2xl">
+                Prazer, sou o Estevão Grossi, fundador da Brastecno. Entrei no
+                mundo da refrigeração de forma autodidata, consertando
+                eletrodomésticos e sempre buscando me aperfeiçoar. Com o tempo,
+                me formei em Engenharia de Automação e me especializei em
+                sistemas elétricos e na tecnologia inverter. Hoje, desenvolvo
+                soluções que facilitam o trabalho de outros técnicos, como o
+                Brastecno Arduino Converter, e compartilho conhecimento de forma
+                prática e acessível, sempre com foco na realidade do campo.
+              </p>
+            </div>
           </div>
         </div>
-        <!--ESTEVÃO-->
+      </div>
+      <!--ESTEVÃO-->
+    </section>
 
-        <!--LUCAS-->
-        <div>
-          <div class="font-roboto pb-5">
-            <h2 class="text-end text-3xl font-semibold">Lucas Alves</h2>
-            <p class="text-end text-lg text-red-500">Consertolândia</p>
-          </div>
-          <div class="flex flex-row-reverse items-center gap-10">
+    <section class="bg-cold-white px-80 pt-28">
+      <!--LUCAS-->
+      <div class="z-10">
+        <div class="flex flex-row-reverse items-center gap-20">
+          <div class="relative z-10">
             <img
               src="./assets/img/img-lucas.png"
               alt="Foto do Lucas"
-              class="w-2xs"
+              class="max-w-[450px]"
             />
-            <p class="font-roboto text-center text-lg">
+            <div class="absolute -right-105 bottom-91 -z-10 flex rotate-90">
+              <h1 class="font-tilt text-8xl opacity-10">CONSERTOLÂNDIA</h1>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-20">
+            <div>
+              <h2
+                class="font-bebasneue text-end text-7xl font-semibold tracking-widest"
+              >
+                Lucas Alves
+              </h2>
+              <p
+                class="font-roboto border-cinza border-b-1 pb-3 text-end text-3xl"
+              >
+                Consertolândia
+              </p>
+            </div>
+            <p class="font-roboto max-w-4xl text-justify text-2xl">
               Olá, sou o Lucas Alves, fundador da Consertolândia. Comecei na
               refrigeração aos 17 anos, aprendendo do zero em uma oficina. Aos
               18, me tornei sócio do técnico que me ensinou e segui carreira
@@ -218,19 +317,31 @@
             </p>
           </div>
         </div>
-        <!--LUCAS-->
       </div>
+      <!--LUCAS-->
     </section>
     <!--TEXTO DE APRESENTAÇÃO-->
 
     <!--MÓDULOS E AULAS-->
-    <section class="mx-52 pb-28">
-      <div class="flex flex-col items-center gap-10 pb-20">
-        <h1 class="font-bebasneue max-w-[800px] text-center text-5xl font-bold">
+    <section
+      class="from-cinza to-cold-white relative bg-gradient-to-b to-50% px-52 py-48"
+    >
+      <div class="absolute top-0 left-0 z-0 size-full">
+        <img
+          src="./assets/vetor/cobreis-menor.svg"
+          alt=""
+          class="w-full opacity-20"
+        />
+      </div>
+
+      <div class="z-40 flex flex-col items-center gap-20 pb-20">
+        <h1
+          class="font-bebasneue text-cold-white z-40 max-w-[900px] text-center text-7xl font-bold"
+        >
           Confira um pouco do que te espera no curso
-          <span class="text-azul-marinho">Automação Inverter</span>
+          <span class="text-azul-marinho underline">Automação Inverter</span>
         </h1>
-        <p class="font-roboto max-w-[800px] text-center text-2xl">
+        <p class="font-roboto z-40 max-w-[1000px] text-center text-2xl">
           Aulas teóricas, práticas e direto na bancada. Com conteúdos aplicáveis
           e explicações passo a passo, você vai testar, praticar e sair pronto
           para atuar com segurança na área.
@@ -238,17 +349,23 @@
       </div>
 
       <div class="flex justify-center gap-20">
-        <div>
-          <img src="./assets/img/img-modulos.jpg" alt="" class="w-[585px]" />
+        <div class="z-40">
+          <img
+            src="./assets/img/img-modulos.jpg"
+            alt=""
+            class="w-[585px] min-w-[300px] rounded-4xl"
+          />
         </div>
-        <div class="font-roboto flex flex-col gap-3">
-          <div class="bg-cold-white cursor-pointer p-4">
+        <div class="font-roboto modules z-40 flex max-w-[500px] flex-col gap-3">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">Apresentação</h2>
             </div>
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>Conheça os professores e o curso</li>
                 <li>O que você vai aprender aqui</li>
                 <li>Ferramentas essenciais para automação</li>
@@ -268,14 +385,16 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">Projetos Práticos com Arduino</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>Projetos Arduino: Parte 1</li>
                 <li>Projetos Arduino: Parte 2</li>
                 <li>Converter On/Off: Programação passo a passo</li>
@@ -295,14 +414,16 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">Seleção de Compressores</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>Seleção de compressor inverter</li>
                 <li>Seleção compressores inverter aula final</li>
                 <li>Aplicativo Toolbox para cálculo de compressor</li>
@@ -312,14 +433,16 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">Diagramas Elétricos dos Projetos</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>Diagrama elétrico Brastecno converter On/Off (LM7805)</li>
                 <li>
                   Diagrama elétrico Brastecno converter On/Off (Octoacoplador)
@@ -334,15 +457,17 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
 
               <h2 class="text-2xl">Resultados em Campo</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>Resultados DF36X com Brastecno Sensor Inverter Arduino</li>
                 <li>Resultados BRN80 com Brastecno Soft Start Arduino</li>
                 <li>Resultados BRS70G com Brastecno Soft Start Arduino</li>
@@ -368,16 +493,16 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
-              <h2 class="text-2xl">
-                Módulo Cervejeira Elletromec Estevão e Lucas
-              </h2>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
+              <h2 class="text-2xl">Cervejeira Elletromec</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>Drop-in vs módulo frequencial</li>
                 <li>
                   Inversor Drop-in FMSY (Baby) 519400014 e seu funcionamento
@@ -395,14 +520,16 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">Drop-in FullMotion Embraco</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>Como diferenciar inversor Drop-in e frequencial</li>
                 <li>Como ligar inversor FullMotion Drop-in</li>
                 <li>Alterações de frequência inversores Embraco</li>
@@ -415,14 +542,16 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">BRE50 Brastemp Soft Start</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>Apresentação e estratégia BRE50</li>
                 <li>Arduino Soft Start VEMZ9C Embraco</li>
                 <li>Resultado final Soft Start BRM50</li>
@@ -435,27 +564,31 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">Módulo Philco</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>PRF504I: Como instalar motor On/Off</li>
               </ul>
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">French Door Samsung RF49A</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>RF49A</li>
                 <li>Ligando SSR na placa RF49A</li>
                 <li>Reset Erro RF49A</li>
@@ -464,14 +597,16 @@
             </div>
           </div>
 
-          <div class="bg-cold-white cursor-pointer p-4">
+          <div
+            class="bg-cold-white module cursor-pointer rounded-full px-6 py-4 shadow-md"
+          >
             <div class="flex items-center gap-4">
-              <i class="fi fi-rr-angle-right relative top-[3px] text-xl"></i>
+              <i class="fa-solid fa-chevron-right text-xl"></i>
               <h2 class="text-2xl">Modulo Bonus | Fabricação de Testador</h2>
             </div>
 
-            <div class="hidden">
-              <ul>
+            <div class="list hidden pt-5 text-lg font-semibold">
+              <ul class="flex list-disc flex-col gap-2 pl-6">
                 <li>
                   Nesse módulo você irá aprender a fabricar o seu próprio
                   testador para compressores inverter e para placas inversoras
@@ -485,23 +620,33 @@
     <!--MÓDULOS E AULAS-->
 
     <!--MÓDULO BÔNUS-->
-    <section class="mx-52 pb-28">
-      <div class="flex items-center justify-between">
-        <div>
-          <h1 class="text-6xl font-bold">
-            Módulo <span class="text-azul-marinho">Bônus</span>
-          </h1>
+    <section class="border-cinza z-40 border-b px-52 py-36 pb-40">
+      <div class="z-40 flex items-center justify-between">
+        <div class="z-40">
+          <h2
+            class="relative text-9xl font-bold text-transparent"
+            style="-webkit-text-stroke: 2px black"
+          >
+            Módulo
+            <span
+              class="text-azul-marinho absolute -bottom-19 -left-12 z-40 text-9xl"
+              style="-webkit-text-stroke: 0px black"
+              >Bônus</span
+            >
+          </h2>
         </div>
 
-        <div class="flex w-[900px] flex-col gap-20">
-          <h2 class="text-4xl">
+        <div class="flex w-[800px] flex-col gap-10">
+          <h2 class="font-bebasneue text-center text-5xl">
             Aprenda a fabricar o Testador Inverter Brastecno
           </h2>
-          <h4 class="text-2xl">
+          <h4
+            class="font-roboto border-mint rounded-full border px-8 py-4 text-center text-3xl font-bold"
+          >
             Uma ferramenta criada para facilitar diagnósticos e testes em
             compressores inverter.
           </h4>
-          <p class="text-xl">
+          <p class="font-roboto text-gray text-justify text-3xl">
             Neste módulo extra, você terá acesso ao passo a passo completo da
             montagem e funcionamento do testador desenvolvido pela própria
             Brastecno. Um diferencial que só os alunos desse curso terão, com
@@ -513,43 +658,154 @@
     <!--MÓDULO BÔNUS-->
 
     <!--PROVA DE VALOR + CTA-->
-    <section class="mx-52 pb-28">
-      <button
-        class="bg-azul-marinho cursor-pointer rounded-3xl px-4 py-2 text-lg text-white"
-      >
-        Quero aprender e me especializar também
-      </button>
+    <section class="px-52 py-28">
+      <div class="bg-azul-petroleo mb-3 w-min rounded-full p-2 px-3">
+        <i class="fi fi-tr-waveform text-3xl text-white"></i>
+      </div>
+      <h1 class="font-bebasneue z-10 pb-10 text-5xl tracking-wider">
+        Feedbacks
+      </h1>
+      <div class="relative grid grid-cols-4 gap-20 pb-20">
+        <div class="absolute -top-20 left-80 z-0 w-full">
+          <img
+            src="./assets/vetor/feedback.svg"
+            alt=""
+            class="w-full min-w-[900px] opacity-30"
+          />
+        </div>
+        <iframe
+          class="z-10 size-[350px] rounded-4xl"
+          src="https://www.youtube.com/embed/smuEmUWb5sM"
+          title="Depoimento de um de nossos alunos do curso Automação Inverter!"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          class="z-10 size-[350px] rounded-4xl"
+          src="https://www.youtube.com/embed/QsHwFSN8E6o"
+          title="Depoimento de um de nossos alunos do curso Automação Inverter"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          class="z-10 size-[350px] rounded-4xl"
+          src="https://www.youtube.com/embed/oknkp6UuDFI"
+          title="Outro depoimento de um de nossos alunos do curso Automação Inverter 🚀"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          class="z-10 size-[350px] rounded-4xl"
+          src="https://www.youtube.com/embed/ddtqNShdvCQ"
+          title="Depoimento de um de nossos alunos do curso Automação Inverter"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="flex justify-center">
+        <button
+          class="font-roboto group bg-azul-petroleo border-azul-petroleo relative flex cursor-pointer items-center gap-4 overflow-hidden rounded-4xl border px-6 py-4 text-2xl text-white transition-colors duration-300"
+        >
+          <span
+            class="relative z-10 transition-colors duration-300 group-hover:text-black"
+          >
+            Quero me especializar também
+          </span>
+          <span
+            class="absolute inset-0 z-0 origin-right scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100"
+          ></span>
+        </button>
+      </div>
     </section>
     <!--PROVA DE VALOR + CTA-->
 
     <!--OFERTAS-->
-    <section class="mx-52 pb-28">
-      <div class="flex justify-center">
+    <section
+      class="from-azul-petroleo to-azul-marinho bg-gradient-to-l px-52 py-28"
+    >
+      <div class="relative flex justify-center">
+        <!--LUZES-->
         <div
-          class="bg-cold-white flex flex-col items-center gap-10 rounded-2xl p-8"
+          class="bg-mint absolute top-[0%] left-[3%] z-10 h-[300px] w-[300px] rounded-full opacity-50 blur-3xl"
+        ></div>
+        <div
+          class="bg-mint absolute -right-[5%] bottom-[5%] z-10 h-[300px] w-[300px] rounded-full opacity-50 blur-3xl"
+        ></div>
+        <!--LUZES-->
+        <div
+          class="bg-azul-petroleo z-40 flex flex-col items-center gap-10 rounded-4xl border border-white p-8 shadow-xl"
         >
           <div>
-            <h1 class="text-3xl font-bold">Pacote completo</h1>
-          </div>
-          <div class="flex flex-col items-center gap-3 text-lg">
-            <p>Certificado de conclusão</p>
-            <p>+ de 10 horas de curso</p>
-            <p>Acesso vitalício</p>
-            <p>Grupo fechado com os alunos</p>
-            <p>7 dias de garantia</p>
-            <p>Suporte com manuais técnicos</p>
-            <p>Suporte dos professores</p>
-            <p>Módulo bônus</p>
-            <p>Aulas práticas</p>
-            <p>Aulas teóricas</p>
+            <h1
+              class="font-bebasneue text-4xl font-bold tracking-wider text-white"
+            >
+              Pacote completo
+            </h1>
           </div>
           <div>
-            <p class="text-3xl">R$ 597,00</p>
+            <p class="font-roboto text-4xl font-bold text-white underline">
+              R$ 597,00
+            </p>
           </div>
+          <div class="text-mint flex flex-col gap-3 px-10 text-lg">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">Certificado de conclusão</p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">+ de 10 horas de curso</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">Acesso vitalício</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">Grupo fechado com os alunos</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">7 dias de garantia</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">Suporte com manuais técnicos</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">Suporte dos professores</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">Módulo bônus</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">Aulas práticas</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle text-[8px]"></i>
+              <p class="font-roboto text-xl">Aulas teóricas</p>
+            </div>
+          </div>
+
           <button
-            class="bg-azul-marinho cursor-pointer rounded-3xl px-4 py-2 text-lg text-white"
+            class="bg-cold-white text-azul-petroleo hover:bg-light-mint w-full cursor-pointer rounded-3xl px-4 py-4 text-xl font-bold duration-300"
           >
-            Quero aprender e me especializar também
+            Quero me matricular
           </button>
         </div>
       </div>
@@ -557,12 +813,10 @@
     <!--OFERTAS-->
 
     <!--REEMBOLSO-->
-    <section class="mx-52 pb-28">
+    <section class="to-cinza bg-gradient-to-b from-white px-52 py-40">
       <div class="flex items-center justify-between">
-        <h1 class="text-3xl font-bold">
-          Garantia de 7 Dias — Compra 100% Segura
-        </h1>
-        <p class="w-[700px] text-2xl">
+        <img src="./assets/vetor/Selo.svg" alt="" class="w-[500px]" />
+        <p class="font-roboto w-[700px] text-right text-2xl">
           Você pode acessar o conteúdo do curso com total tranquilidade. Se por
           qualquer motivo achar que o curso não é para você, oferecemos uma
           garantia incondicional de 7 dias. Basta solicitar o reembolso dentro
@@ -575,7 +829,7 @@
     <!--REEMBOLSO-->
 
     <!--CTA-->
-    <section class="mx-52 pb-28">
+    <section class="from-cinza to-cold-white bg-gradient-to-b px-52 py-28">
       <div class="flex flex-col items-center justify-center gap-10">
         <img src="./assets/img/clique-gif.gif" alt="" />
         <h3>
@@ -622,10 +876,8 @@
         </div>
       </div>
 
-      <div
-        class="flex w-[800px] items-center justify-center border-t-1 bg-amber-300"
-      >
-        <p style="margin: 0">
+      <div class="flex items-center justify-center border-t-1 pt-1">
+        <p>
           © 2025 <strong>Brastecno</strong>. Todos os direitos reservados.
           Desenvolvido por
           <a
