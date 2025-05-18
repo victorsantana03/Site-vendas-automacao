@@ -3,6 +3,7 @@
 @theme {
   /* CORES SECUNDÁRIAS */
   --color-cold-white: #f1f1f1;
+  --color-cold-white-menu: rgba(241, 241, 241, 0.9);
   --color-light-salmon: #ff8c69;
   --color-light-mint: #e1f4e7;
   --color-verde-agua: #87efdd;
@@ -19,4 +20,15 @@
   /* FONTES */
   --font-bebasneue: "Bebas Neue", "sans-serif";
   --font-roboto: "Roboto", serif;
+  --font-tilt: "Tilt Prism", "sans-serif";
+}
+
+/*ANIMAÇÃO SLIDER*/
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
