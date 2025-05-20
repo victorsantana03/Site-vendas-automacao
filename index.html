@@ -130,7 +130,7 @@
 
       <!--VETOR DE FUNDO-->
       <div
-        class="invisible absolute z-10 h-full w-screen md:visible xl:top-90 xl:left-0 2xl:top-40 2xl:left-0"
+        class="absolute z-10 h-full w-screen xl:top-90 xl:left-0 2xl:top-40 2xl:left-0"
       >
         <img
           src="./assets/vetor/cobreis-menor.svg"
@@ -828,19 +828,30 @@
 
     <!--REEMBOLSO-->
     <section
-      class="to-cinza bg-gradient-to-b from-white px-3 py-20 lg:px-20 xl:px-24 xl:py-40 2xl:px-52"
+      class="border-cinza relative border-b bg-white px-3 lg:px-20 xl:px-24 xl:py-52 2xl:px-52"
     >
+      <!--VETOR DE FUNDO-->
+      <div class="invisible absolute top-0 left-0 z-0 size-full lg:visible">
+        <img
+          src="./assets/vetor/funcionaa.svg"
+          alt=""
+          class="h-full w-full opacity-20"
+        />
+      </div>
+      <!--VETOR DE FUNDO-->
       <div
         class="flex flex-col items-center justify-between gap-12 xl:flex-row xl:gap-0"
       >
-        <img src="./assets/vetor/Selo.svg" alt="" class="w-[450px]" />
-        <p class="font-roboto text-right text-2xl xl:w-[700px]">
+        <img src="./assets/vetor/Selo.svg" alt="" class="z-10 w-[450px]" />
+        <p
+          class="font-roboto bg-cold-white z-10 rounded-4xl border border-none p-8 text-center text-3xl xl:w-[700px]"
+        >
           Você pode acessar o conteúdo do curso com total tranquilidade. Se por
           qualquer motivo achar que o curso não é para você, oferecemos uma
-          garantia incondicional de 7 dias. Basta solicitar o reembolso dentro
-          desse período e todo o valor investido será devolvido, sem perguntas
-          ou burocracia. Seu compromisso é com o aprendizado — o nosso é com a
-          sua satisfação.
+          garantia incondicional de 7 dias.<br />
+          Basta solicitar o reembolso dentro desse período e todo o valor
+          investido será devolvido, sem perguntas ou burocracia. Seu compromisso
+          é com o aprendizado — o nosso é com a sua satisfação.
         </p>
       </div>
     </section>
@@ -848,74 +859,120 @@
 
     <!--CTA-->
     <section
-      class="from-cinza to-cold-white bg-gradient-to-b px-3 py-28 lg:px-20 xl:px-24 2xl:px-52"
+      class="bg-gradient-to-b px-3 py-60 pt-64 lg:px-20 xl:px-24 2xl:px-5"
     >
-      <div class="flex flex-col items-center justify-center gap-10">
-        <img src="./assets/img/clique-gif.gif" alt="" />
-        <h3>
-          A especialização que você procura está a um clique de distância.
+      <div class="relative flex flex-col items-center justify-center gap-10">
+        <h3
+          class="font-bebasneue z-20 w-[600px] text-center text-5xl font-bold"
+        >
+          A <span class="text-azul-marinho">especialização</span> que você
+          procura está a um clique de distância.
         </h3>
-        <button>Inscreva-se agora!</button>
+        <img
+          src="./assets/img/criquis.gif"
+          alt=""
+          class="absolute -bottom-20 z-0 w-[90%] opacity-20"
+        />
+
+        <button
+          class="font-roboto group border-azul-petroleo relative flex cursor-pointer items-center gap-4 overflow-hidden rounded-4xl border bg-transparent px-6 py-4 text-xl text-black transition-colors duration-300 xl:text-2xl"
+        >
+          <span
+            class="relative z-10 transition-colors duration-300 group-hover:text-white"
+          >
+            Inscreva-se agora
+          </span>
+          <i
+            class="fa-solid fa-arrow-right-long relative z-10 text-2xl transition-colors duration-300 group-hover:text-white"
+          ></i>
+
+          <!-- Background animado -->
+          <span
+            class="bg-azul-petroleo absolute inset-0 z-0 origin-left scale-x-0 transform transition-transform duration-300 group-hover:scale-x-100"
+          ></span>
+        </button>
       </div>
     </section>
     <!--CTA-->
 
     <!--FOOTER-->
-    <footer class="bg-cold-white px-3 py-4 lg:px-20 xl:px-24 2xl:px-52">
-      <div class="flex flex-col items-center justify-around gap-5 xl:flex-row">
-        <div class="flex flex-col items-center gap-2">
-          <a href="https://www.brastecnoguarulhos.com.br" target="_blank">
-            <img
-              src="./assets/logos/logo-brastecno.svg"
-              alt="Logo da Brastecno"
-              class="w-2xs"
-            />
-          </a>
+    <footer class="px-10 py-5">
+      <div class="bg-cold-white rounded-4xl p-10">
+        <h3 class="font-bebasneue pb-10 text-center text-5xl">
+          "Tecnologia aplicada. Inverter resolvido."
+        </h3>
+        <div
+          class="flex flex-col items-center justify-around gap-5 pb-5 xl:flex-row"
+        >
+          <div class="flex flex-col items-center gap-2">
+            <a
+              href="https://www.brastecnoguarulhos.com.br"
+              target="_blank"
+              class=""
+            >
+              <img
+                src="./assets/logos/logo-brastecno.svg"
+                alt="Logo da Brastecno"
+                class="w-2xs"
+              />
+            </a>
 
-          <p>Estevão Grossi</p>
-          <a href="mailto:">brastecnoassistencia@gmail.com </a>
-          <div>
-            <i class="fi fi-brands-instagram"></i>
+            <p class="font-roboto text-xl">Estevão Grossi</p>
+            <a href="mailto:" class="hover:text-azul-marinho text-lg"
+              >brastecnoassistencia@gmail.com
+            </a>
+            <div>
+              <a href="">
+                <i class="fi fi-brands-instagram text-lg"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center gap-2">
+            <a
+              href="https://consertolandiarefrigeracao.com.br/"
+              target="_blank"
+            >
+              <img
+                src="./assets/logos/logo-consertolandia.png"
+                alt="Logo da Consertolândia"
+                class="w-2xs"
+              />
+            </a>
+
+            <p class="font-roboto text-xl">Lucas Alves</p>
+            <a href="mailto:" class="hover:text-azul-marinho text-lg"
+              >Consertolandia011sp@gmail.com</a
+            >
+            <div>
+              <i class="fi fi-brands-instagram text-lg"></i>
+            </div>
           </div>
         </div>
 
-        <div class="flex flex-col items-center gap-2">
-          <a href="https://consertolandiarefrigeracao.com.br/" target="_blank">
-            <img
-              src="./assets/logos/logo-consertolandia.png"
-              alt="Logo da Consertolândia"
-              class="w-2xs"
-            />
-          </a>
-
-          <p>Lucas Alves</p>
-          <a href="mailto:">Consertolandia011sp@gmail.com</a>
-          <div>
-            <i class="fi fi-brands-instagram"></i>
-          </div>
+        <div
+          class="border-cinza flex items-center justify-center border-t-1 pt-4"
+        >
+          <p class="font-roboto text-md">
+            © 2025 <strong>Brastecno</strong>. Todos os direitos reservados.
+            Desenvolvido por
+            <a
+              href="https://www.linkedin.com/in/catherine-grossi/"
+              style="color: #56a0d3"
+              class="hover:underline"
+            >
+              Catherine Grossi
+            </a>
+            e
+            <a
+              href="https://www.linkedin.com/in/victor-alves-santana-111440196/"
+              style="color: #56a0d3"
+              class="hover:underline"
+            >
+              Victor Santana
+            </a>
+          </p>
         </div>
-      </div>
-
-      <div class="flex items-center justify-center border-t-1 pt-1">
-        <p>
-          © 2025 <strong>Brastecno</strong>. Todos os direitos reservados.
-          Desenvolvido por
-          <a
-            href="https://www.linkedin.com/in/catherine-grossi/"
-            style="color: #56a0d3"
-            class="hover:underline"
-          >
-            Catherine Grossi
-          </a>
-          e
-          <a
-            href="https://www.linkedin.com/in/victor-alves-santana-111440196/"
-            style="color: #56a0d3"
-            class="hover:underline"
-          >
-            Victor Santana
-          </a>
-        </p>
       </div>
     </footer>
     <!--FOOTER-->
