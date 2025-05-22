@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -45,22 +45,37 @@
           <nav>
             <ul class="font-roboto flex flex-col text-xl">
               <li class="cursor-pointer px-8 py-3 hover:text-black">
-                <a href="">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li
                 class="cursor-pointer border-t-2 border-t-white px-8 py-3 hover:text-black"
               >
-                <a href="">Apresentação</a>
+                <a href="#sobre-nos">Sobre nós</a>
               </li>
               <li
                 class="cursor-pointer border-t-2 border-t-white px-8 py-3 hover:text-black"
               >
-                <a href="">Módulos</a>
+                <a href="#curso">Curso</a>
+              </li>
+              <li
+                class="cursor-pointer border-t-2 border-t-white px-8 py-3 hover:text-black"
+              >
+                <a href="#feedback">Feedbacks</a>
+              </li>
+              <li
+                class="cursor-pointer border-t-2 border-t-white px-8 py-3 hover:text-black"
+              >
+                <a href="#oferta">Ofertas</a>
               </li>
               <li
                 class="cursor-pointer border-t-2 border-b-2 border-t-white border-b-white px-8 py-3 hover:text-black"
               >
-                <a href="">Ofertas</a>
+                <a
+                  href="https://pay.hotmart.com/E98234330V?bid=1747865555348"
+                  target="_blank"
+                >
+                  Matricule-se
+                </a>
               </li>
             </ul>
           </nav>
@@ -86,24 +101,29 @@
           class="font-roboto text-md hidden items-center gap-3 lg:flex lg:gap-8 lg:text-xl xl:gap-10"
         >
           <li class="hover:text-azul-marinho cursor-pointer duration-100">
-            Home
+            <a href="#home">Home</a>
           </li>
           <li class="hover:text-azul-marinho cursor-pointer duration-100">
-            Sobre nós
+            <a href="#sobre-nos">Sobre nós</a>
           </li>
           <li class="hover:text-azul-marinho cursor-pointer duration-100">
-            Curso
+            <a href="#curso">Curso</a>
           </li>
           <li class="hover:text-azul-marinho cursor-pointer duration-100">
-            Feedbacks
+            <a href="#feedback">Feedbacks</a>
           </li>
           <li class="hover:text-azul-marinho cursor-pointer duration-100">
-            Ofertas
+            <a href="#oferta">Ofertas</a>
           </li>
           <li
             class="text-azul-marinho cursor-pointer rounded-full border-2 border-white px-4 py-3 duration-100 hover:bg-white"
           >
-            Matricule-se
+            <a
+              href="https://pay.hotmart.com/E98234330V?bid=1747865555348"
+              target="_blank"
+            >
+              Matricule-se
+            </a>
           </li>
         </ul>
         <div class="text-xl md:text-2xl lg:hidden">
@@ -118,6 +138,7 @@
 
     <!--HOME-->
     <section
+      id="home"
       class="from-cold-white bg-gradient-to-b from-50% to-white px-6 pt-32 lg:px-20 lg:pt-60 xl:px-24 2xl:px-52"
     >
       <div
@@ -136,32 +157,47 @@
           <button
             class="font-roboto group border-azul-petroleo relative flex cursor-pointer items-center gap-4 overflow-hidden rounded-4xl border bg-transparent px-6 py-4 text-lg text-black transition-colors duration-300 xl:text-2xl"
           >
-            <span
-              class="relative z-10 font-bold transition-colors duration-300 group-hover:text-white"
+            <a
+              href="https://pay.hotmart.com/E98234330V?bid=1747865555348"
+              target="_blank"
             >
-              Garanta sua vaga
-            </span>
-            <i
-              class="fa-solid fa-arrow-right-long relative z-10 text-2xl transition-colors duration-300 group-hover:text-white"
-            ></i>
+              <span
+                class="relative z-10 font-bold transition-colors duration-300 group-hover:text-white"
+              >
+                Garanta sua vaga
+              </span>
+              <i
+                class="fa-solid fa-arrow-right-long relative z-10 text-2xl transition-colors duration-300 group-hover:text-white"
+              ></i>
 
-            <!-- Background animado -->
-            <span
-              class="bg-azul-petroleo absolute inset-0 z-0 origin-left scale-x-0 transform transition-transform duration-300 group-hover:scale-x-100"
-            ></span>
+              <!-- Background animado -->
+              <span
+                class="bg-azul-petroleo absolute inset-0 z-0 origin-left scale-x-0 transform transition-transform duration-300 group-hover:scale-x-100"
+              ></span>
+            </a>
           </button>
-
-          <!-- <div
-            class="bg-azul-marinho absolute top-0 left-0 -z-10 flex h-[70%] w-[60%] rounded-r-full opacity-30 blur-2xl brightness-200"
-          ></div> -->
         </div>
 
-        <img
+        <div
           class="z-20 block size-full min-h-[300px] max-w-[750px] min-w-[340px] rounded-tr-4xl rounded-bl-4xl object-cover xl:min-w-[580px] 2xl:min-w-[680px]"
+        >
+          <iframe
+            class="h-[400px] w-full rounded-4xl object-cover lg:h-[500px]"
+            src="https://www.youtube.com/embed/ZzNOmEohLws"
+            title="Curso Automação Inverter"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <!-- <img
+          class="z-20 hidden size-full min-h-[300px] max-w-[750px] min-w-[340px] rounded-tr-4xl rounded-bl-4xl object-cover xl:min-w-[580px] 2xl:min-w-[680px]"
           src="./assets/img/IMG-home-2.jpg"
           alt="Imagem Lucas e Estevão"
           loading="lazy"
-        />
+        /> -->
       </div>
     </section>
     <!--HOME-->
@@ -177,12 +213,12 @@
 
       <!--VETOR DE FUNDO-->
       <div
-        class="invisible absolute z-10 h-full w-screen xl:visible xl:top-90 xl:left-0 2xl:top-40 2xl:left-0"
+        class="invisible absolute z-10 h-full w-screen xl:visible xl:top-90 xl:left-0 2xl:-top-135 2xl:left-0"
       >
         <img
           src="./assets/vetor/cobreis-menor.svg"
           alt=""
-          class="w-screen object-center"
+          class="w-screen object-center opacity-50"
         />
       </div>
       <!--VETOR DE FUNDO-->
@@ -209,7 +245,7 @@
             class="bg-azul-petroleo flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
           >
             <i class="fi fi-tr-video-duration text-3xl"></i>
-            <h3 class="border-b">+ de 15 horas de curso</h3>
+            <h3 class="border-b">+ de 100 aulas</h3>
           </div>
           <div
             class="bg-azul-petroleo relative flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
@@ -234,7 +270,7 @@
             class="bg-azul-petroleo flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
           >
             <i class="fi fi-tr-badget-check-alt text-3xl"></i>
-            <h3 class="border-b">Garantia</h3>
+            <h3 class="border-b">7 dias de garantia</h3>
           </div>
           <div
             class="bg-azul-petroleo flex flex-col items-center gap-3 rounded-2xl border border-white px-5 py-14 text-xl text-white md:text-2xl"
@@ -248,7 +284,7 @@
     <!--CARDS-->
 
     <!--VÍDEO-->
-    <section
+    <!-- <section
       class="from-azul-marinho to-azul-petroleo bg-gradient-to-b px-5 pb-16 lg:px-20 xl:px-32 2xl:px-52"
     >
       <div class="flex flex-col items-center gap-5">
@@ -275,11 +311,12 @@
           ></iframe>
         </div>
       </div>
-    </section>
+    </section> -->
     <!--VÍDEO-->
 
     <!--TEXTO DE APRESENTAÇÃO-->
     <section
+      id="sobre-nos"
       class="bg-cold-white px-6 pt-20 pb-10 lg:px-20 xl:px-24 xl:pb-0 2xl:px-52"
     >
       <div class="flex flex-col gap-40">
@@ -382,6 +419,7 @@
 
     <!--MÓDULOS E AULAS-->
     <section
+      id="curso"
       class="from-cinza to-cold-white relative bg-gradient-to-b to-50% px-6 py-32 lg:px-20 xl:px-24 xl:py-48 2xl:px-52"
     >
       <!--VETOR DE FUNDO-->
@@ -728,7 +766,7 @@
     <!--MÓDULO BÔNUS-->
 
     <!--PROVA DE VALOR + CTA-->
-    <section class="px-6 py-24 lg:px-20 xl:px-24 2xl:px-52">
+    <section class="px-6 py-24 lg:px-20 xl:px-24 2xl:px-52" id="feedback">
       <div class="bg-azul-petroleo mb-3 w-min rounded-full px-3 py-2">
         <i
           class="fi fi-tr-waveform text-xl text-white md:text-2xl lg:text-3xl"
@@ -739,6 +777,7 @@
       </h1>
       <div
         class="relative grid grid-cols-1 place-items-center gap-10 pb-20 xl:grid-cols-2 xl:gap-20 2xl:grid-cols-4"
+        id="video-grid"
       >
         <div class="absolute -top-10 left-0 z-0 w-full xl:-top-20 xl:left-80">
           <img
@@ -747,25 +786,6 @@
             class="w-full min-w-[600px] opacity-40 xl:min-w-[900px]"
           />
         </div>
-        <iframe
-          class="z-10 size-[300px] rounded-4xl"
-          src="https://www.youtube.com/embed/smuEmUWb5sM"
-          title="Depoimento de um de nossos alunos do curso Automação Inverter!"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-
-        <iframe
-          class="z-10 size-[300px] rounded-4xl"
-          src="https://www.youtube.com/embed/QsHwFSN8E6o"
-          title="Depoimento de um de nossos alunos do curso Automação Inverter"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
 
         <iframe
           class="z-10 size-[300px] rounded-4xl"
@@ -776,29 +796,52 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-
         <iframe
           class="z-10 size-[300px] rounded-4xl"
-          src="https://www.youtube.com/embed/ddtqNShdvCQ"
+          src="https://www.youtube.com/embed/Zf0oF7cLSjs"
+          title="Depoimento do nosso aluno Paulo, no curso Automação Inverter! 🚀"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="z-10 size-[300px] rounded-4xl"
+          src="https://www.youtube.com/embed/QsHwFSN8E6o"
           title="Depoimento de um de nossos alunos do curso Automação Inverter"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
+
+        <div>
+          <button
+            id="show-more"
+            class="bg-cinza flex items-center justify-center gap-3 rounded-full px-4 py-3 text-xl"
+          >
+            <i class="fa-solid fa-chevron-right text-white"></i>
+          </button>
+        </div>
       </div>
+
       <div class="flex justify-center">
         <button
           class="font-roboto group bg-azul-petroleo border-azul-petroleo relative flex cursor-pointer items-center gap-4 overflow-hidden rounded-4xl border px-6 py-4 text-lg text-white transition-colors duration-300 xl:text-2xl"
         >
-          <span
-            class="relative z-10 transition-colors duration-300 group-hover:text-black"
+          <a
+            href="https://pay.hotmart.com/E98234330V?bid=1747865555348"
+            target="_blank"
           >
-            Quero me especializar também
-          </span>
-          <span
-            class="absolute inset-0 z-0 origin-right scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100"
-          ></span>
+            <span
+              class="relative z-10 transition-colors duration-300 group-hover:text-black"
+            >
+              Quero me especializar também
+            </span>
+            <span
+              class="absolute inset-0 z-0 origin-right scale-x-0 transform bg-white transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </a>
         </button>
       </div>
     </section>
@@ -807,6 +850,7 @@
     <!--OFERTAS-->
     <section
       class="from-azul-petroleo to-azul-marinho bg-gradient-to-l px-6 py-28 lg:px-20 xl:px-24 2xl:px-52"
+      id="oferta"
     >
       <div class="relative flex justify-center">
         <!--LUZES-->
@@ -818,7 +862,7 @@
         ></div>
         <!--LUZES-->
         <div
-          class="bg-azul-petroleo z-30 flex flex-col items-center gap-10 rounded-4xl border border-white p-4 shadow-xl xl:p-8"
+          class="bg-azul-petroleo/50 z-30 flex flex-col items-center gap-10 rounded-4xl border border-white p-4 shadow-xl xl:p-8"
         >
           <div>
             <h1
@@ -827,71 +871,90 @@
               Pacote completo
             </h1>
           </div>
-          <div>
-            <p
-              class="font-roboto text-2xl font-bold text-white underline xl:text-4xl"
-            >
-              R$ 597,00
-            </p>
-          </div>
-          <div class="text-mint flex flex-col gap-3 text-lg xl:px-10">
+
+          <div class="flex flex-col gap-3 text-lg text-white xl:px-10">
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">
                 Certificado de conclusão
               </p>
             </div>
 
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">
                 + de 10 horas de curso
               </p>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">Acesso vitalício</p>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">
                 Grupo fechado com os alunos
               </p>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">7 dias de garantia</p>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">
                 Suporte com manuais técnicos
               </p>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">
                 Suporte dos professores
               </p>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">Módulo bônus</p>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">Aulas práticas</p>
             </div>
             <div class="flex items-center gap-3">
-              <i class="fa-solid fa-circle text-[8px]"></i>
+              <i class="fa-solid fa-check text-mint text-lg"></i>
               <p class="font-roboto text-lg xl:text-xl">Aulas teóricas</p>
             </div>
           </div>
 
+          <div class="flex w-full flex-col items-center">
+            <div class="flex flex-col gap-3 pr-7">
+              <p class="font-roboto text-lg text-white">
+                <span class="text-lg xl:text-xl"
+                  >por <span class="text-xl xl:text-3xl">10x</span></span
+                >
+                <span class="text-mint relative text-4xl font-bold xl:text-6xl"
+                  >R$71,<span class="absolute top-0 text-2xl xl:text-3xl"
+                    >75</span
+                  ></span
+                >
+              </p>
+              <p
+                class="font-roboto text-center text-lg font-bold text-white xl:text-lg"
+              >
+                <span>ou</span> <span class="underline">R$ 597,00</span>
+              </p>
+            </div>
+          </div>
+
           <button
-            class="bg-cold-white text-azul-petroleo hover:bg-light-mint w-full cursor-pointer rounded-3xl px-4 py-4 text-xl font-bold duration-300"
+            class="bg-mint hover:bg-mint/50 w-full cursor-pointer rounded-3xl px-4 py-4 text-xl font-bold text-white duration-300"
           >
-            Quero me matricular
+            <a
+              href="https://pay.hotmart.com/E98234330V?bid=1747865555348"
+              target="_blank"
+            >
+              <span>Quero me matricular</span>
+            </a>
           </button>
         </div>
       </div>
@@ -951,26 +1014,38 @@
         <button
           class="font-roboto group border-azul-petroleo relative flex cursor-pointer items-center gap-4 overflow-hidden rounded-4xl border bg-transparent px-5 py-3 text-lg text-black transition-colors duration-300 xl:text-2xl"
         >
-          <span
-            class="relative z-10 transition-colors duration-300 group-hover:text-white"
+          <a
+            href="https://pay.hotmart.com/E98234330V?bid=1747865555348"
+            target="_blank"
           >
-            Inscreva-se agora
-          </span>
-          <i
-            class="fa-solid fa-arrow-right-long relative z-10 text-xl transition-colors duration-300 group-hover:text-white xl:text-2xl"
-          ></i>
+            <span
+              class="relative z-10 transition-colors duration-300 group-hover:text-white"
+            >
+              Inscreva-se agora
+            </span>
+            <i
+              class="fa-solid fa-arrow-right-long relative z-10 text-xl transition-colors duration-300 group-hover:text-white xl:text-2xl"
+            ></i>
 
-          <!-- Background animado -->
-          <span
-            class="bg-azul-petroleo absolute inset-0 z-0 origin-left scale-x-0 transform transition-transform duration-300 group-hover:scale-x-100"
-          ></span>
+            <!-- Background animado -->
+            <span
+              class="bg-azul-petroleo absolute inset-0 z-0 origin-left scale-x-0 transform transition-transform duration-300 group-hover:scale-x-100"
+            ></span>
+          </a>
         </button>
       </div>
     </section>
     <!--CTA-->
 
     <!--FOOTER-->
-    <footer class="px-6 py-5">
+    <footer class="relative overflow-hidden px-6 py-10">
+      <div
+        class="bg-cinza absolute -bottom-7 left-1/2 -translate-x-1/2 cursor-pointer overflow-hidden rounded-full p-1 text-5xl"
+      >
+        <a href="#home">
+          <i class="fa-solid fa-chevron-up text-cold-white"></i>
+        </a>
+      </div>
       <div class="bg-cold-white rounded-4xl p-5">
         <h3
           class="font-bebasneue border-cinza border-b pb-2 text-center text-3xl xl:text-5xl"
@@ -994,11 +1069,14 @@
             </a>
 
             <p class="font-roboto text-lg xl:text-xl">Estevão Grossi</p>
-            <a href="mailto:" class="hover:text-azul-marinho text-lg"
+            <a
+              href="mailto:brastecnoassistencia@gmail.com"
+              target="_blank"
+              class="hover:text-azul-marinho text-lg"
               >brastecnoassistencia@gmail.com
             </a>
             <div>
-              <a href="">
+              <a href="https://www.instagram.com/brastecno/" target="_blank">
                 <i class="fi fi-brands-instagram text-lg"></i>
               </a>
             </div>
@@ -1017,11 +1095,19 @@
             </a>
 
             <p class="font-roboto text-lg xl:text-xl">Lucas Alves</p>
-            <a href="mailto:" class="hover:text-azul-marinho text-lg"
+            <a
+              href="mailto:Consertolandia011sp@gmail.com"
+              target="_blank"
+              class="hover:text-azul-marinho text-lg"
               >Consertolandia011sp@gmail.com</a
             >
             <div>
-              <i class="fi fi-brands-instagram cursor-pointer text-lg"></i>
+              <a
+                href="https://www.instagram.com/consertolandiarefrigeracao/"
+                target="_blank"
+              >
+                <i class="fi fi-brands-instagram cursor-pointer text-lg"></i>
+              </a>
             </div>
           </div>
         </div>
