@@ -261,6 +261,9 @@
   .-left-43 {
     left: calc(var(--spacing) * -43);
   }
+  .-left-50 {
+    left: calc(var(--spacing) * -50);
+  }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
@@ -275,6 +278,15 @@
   }
   .left-10 {
     left: calc(var(--spacing) * 10);
+  }
+  .left-20 {
+    left: calc(var(--spacing) * 20);
+  }
+  .left-30 {
+    left: calc(var(--spacing) * 30);
+  }
+  .left-50 {
+    left: calc(var(--spacing) * 50);
   }
   .left-\[3\%\] {
     left: 3%;
