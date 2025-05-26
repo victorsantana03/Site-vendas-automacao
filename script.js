@@ -3,14 +3,14 @@ const modules = document.querySelector(".modules");
 const btnMenu = document.querySelector("#btn-menu");
 const btnCloseMenu = document.querySelector("#btn-close-menu");
 const menu = document.querySelector("#menu");
-
 const videoGrid = document.querySelector("#video-grid");
 
+//ADICIONAR SOMBRA AO HEADER
 window.addEventListener("scroll", () => {
   if (window.scrollY > 0) {
-    header.classList.add("shadow-md");
+    header.classList.add("shadow-lg");
   } else {
-    header.classList.remove("shadow-md");
+    header.classList.remove("shadow-lg");
   }
 });
 //ABRIR E FECHAR MÓDULOS
@@ -64,6 +64,7 @@ menu.addEventListener("click", function (event) {
   }
 });
 
+//ADICIONAR VÍDEOS
 const moreVideos = [
   {
     src: "https://www.youtube.com/embed/smuEmUWb5sM",
@@ -76,7 +77,7 @@ const moreVideos = [
 ];
 
 let expanded = false; // estado inicial: recolhido
-let addedIframes = []; // armazenar os iframes que adicionarmos
+let addedIframes = []; // armazenar os iframes
 
 const showMoreButton = document.querySelector("#show-more");
 
