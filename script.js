@@ -67,6 +67,10 @@ menu.addEventListener("click", function (event) {
 //ADICIONAR VÍDEOS
 const moreVideos = [
   {
+    src: "https://www.youtube.com/embed/QsHwFSN8E6o",
+    title: "Depoimento de um de nossos alunos do curso Automação Inverter",
+  },
+  {
     src: "https://www.youtube.com/embed/smuEmUWb5sM",
     title: "Depoimento de um de nossos alunos do curso Automação Inverter!",
   },
@@ -97,13 +101,13 @@ showMoreButton.addEventListener("click", () => {
       addedIframes.push(iframe);
     });
     showMoreButton.innerHTML =
-      '<i class="fa-solid fa-chevron-left text-white"></i>';
+      '<i class="fa-solid fa-minus text-white cursor-pointer"></i>';
     expanded = true;
   } else {
     addedIframes.forEach((iframe) => videoGrid.removeChild(iframe));
     addedIframes = [];
     showMoreButton.innerHTML =
-      '<i class="fa-solid fa-chevron-right text-white"></i>';
+      ' <i class="fa-solid fa-plus text-white cursor-pointer"></i>';
     expanded = false;
   }
 });
